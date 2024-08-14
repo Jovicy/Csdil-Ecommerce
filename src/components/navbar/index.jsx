@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { subSections } from "../../data/database"; // assuming database.jsx exports the sub-sections data
+import { Link } from "react-router-dom";
 
 import {
   FaFacebook,
@@ -104,8 +105,11 @@ export default function Navbar() {
             <div className="w-1/4 flex justify-end items-center gap-8">
               <FaShoppingCart className="h-6 w-6" />
               <div className="flex gap-1">
-                {/* <FaRegUser className="h-6 w-6" /> */}
-                <p>Sign in | Registration</p>
+                <div className="flex gap-1">
+                  <Link to="/signup">
+                    <p>Sign in | Registration</p>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -120,25 +124,49 @@ export default function Navbar() {
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                   className="relative flex items-center gap-2 cursor-pointer rounded-sm p-3 text-gray-500"
+                  aria-haspopup="true"
+                  aria-expanded={hoveredIndex === index}
                 >
                   <p className="text-xs text-gray-500">{section.title}</p>
                   {/* Dropdown Menu */}
-                  <ul
-                    className={`absolute left-0 top-full mt-1 w-52 bg-white border border-gray-200 rounded-md shadow-lg z-10 transform transition duration-200 ease-in-out origin-top ${
-                      hoveredIndex === index
-                        ? "scale-y-100 opacity-100"
-                        : "scale-y-0 opacity-0"
-                    }`}
-                  >
-                    {section.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="p-3 hover:bg-gray-100 cursor-pointer text-xs"
+                  {hoveredIndex === index && (
+                    <div className="fixed inset-0 flex justify-center z-30">
+                      <ul
+                        className={`mt-52 relative w-s80 bg-white border border-gray-200 rounded-md shadow-lg transform transition duration-200 ease-in-out origin-bottom scale-y-100 opacity-100`}
+                        aria-hidden={hoveredIndex !== index}
+                        style={{
+                          display: "grid",
+                          gridTemplateColumns:
+                            section.items.length > 10
+                              ? "repeat(5, 1fr)"
+                              : "repeat(auto-fit, minmax(0, 1fr))",
+                          gridTemplateRows:
+                            "repeat(auto-fill, minmax(3rem, 1fr))",
+                          maxHeight:
+                            section.items.length > 10
+                              ? "calc(10 * 3rem)"
+                              : "none",
+                          overflowY:
+                            section.items.length > 10 ? "auto" : "visible",
+                        }}
                       >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                        {section.items.map((item, i) => (
+                          <li
+                            key={i}
+                            className="p-3 hover:bg-gray-100 cursor-pointer text-xs"
+                            style={{
+                              width:
+                                section.items.length > 10
+                                  ? "calc(90vw / 5)"
+                                  : "auto",
+                            }}
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>

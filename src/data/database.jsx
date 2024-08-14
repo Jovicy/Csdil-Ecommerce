@@ -162,6 +162,8 @@ export const subSections = [
       'Rideshare & Car Pooling',
       'Skills & Language Swap',
       'Sports Teams & Partners',
+      'Sports Teams & Partners',
+      'Sports Teams & Partners',
     ],
   },
   {
