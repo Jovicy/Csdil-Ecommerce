@@ -18,7 +18,7 @@ const SubCategory = () => {
                                 <img src={category.image} className='rounded-t-lg w-full h-52'/>
                             </div>
                             <div className='border border-transparent border-t-gray-100'>
-                                <h3 className='p-2 text-sm font-semibold'>{category.desp}</h3>
+                                <h3 className='p-2 text-sm font-medium text-justify'>{category.desp}</h3>
                             </div>
                         </div>
                     ))}

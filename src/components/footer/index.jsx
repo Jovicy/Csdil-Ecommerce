@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaSquareXTwitter, FaYoutube, FaPint
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col items-center pt-4 bg-teal-50 text-white">
+      <footer className="flex flex-col items-center pt-4 bg-white text-white">
         <div>
           <img src={footerImg} alt="footer-img" />
         </div>

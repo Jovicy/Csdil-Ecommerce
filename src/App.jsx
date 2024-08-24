@@ -7,6 +7,10 @@ import Footer from "../src/components/footer";
 // Pages
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/SignupPage";
+import ForgetPage from "./pages/ForgetPage";
+import VerifyPage from "./pages/VerifyPage";
+import ResetPage from "./pages/ResetPage";
+import AdvertPage from "./pages/AdvertPage";
 
 function App() {
   return (
@@ -14,7 +18,12 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/signin" component={SignupPage} />
         <Route path="/signup" component={SignupPage} />
+        <Route path="/forget-password" component={ForgetPage} />
+        <Route path="/verify-password" component={VerifyPage} />
+        <Route path="/reset-password" component={ResetPage} />
+        <Route path="/add-product" component={AdvertPage} />
         {/* Add other routes here */}
       </Switch>
       <Footer />

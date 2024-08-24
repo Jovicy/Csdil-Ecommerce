@@ -32,9 +32,14 @@ export default function Navbar() {
       <nav className="flex flex-col">
         {/* Top-nav */}
         <div className="bg-orange-400 py-2.5 text-white">
-          <div className="container flex justify-between">
+          <div className="container flex justify-between items-center">
             <div>
-              <p className="text-sm">Welcome to Csdil E-commerce Store</p>
+              <p className="text-sm text-center">
+                Welcome to Csdil E-commerce Platform <br />{" "}
+                <small>
+                  Centre for Sustainable Development of Indigenious Lagosians
+                </small>
+              </p>
             </div>
             <div className="flex gap-5 items-center">
               <div className="flex gap-2 items-center border-r border-white px-5">
@@ -83,8 +88,9 @@ export default function Navbar() {
         <div className="bg-orange-400 py-2.5 text-white">
           <div className="container flex justify-between items-center gap-10 w-full">
             {/* LOGO */}
-            <div className="w-1/4 flex">
-              <img src={logo} className="h-10 w-10 rounded-full" />
+            <div className="w-1/4 flex items-center gap-3">
+              <img src={logo} className="h-20 w-20 rounded-full" />
+              <h3>About Csdil</h3>
             </div>
             {/* SEARCH */}
             <div className="flex flex-col-reverse gap-1 justify-center items-center w-1/2">

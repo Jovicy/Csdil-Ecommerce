@@ -1,188 +1,213 @@
-const subCategory1 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/e15f1b52-86ab-4f76-79f2-5303e307bb00/86';
-const subCategory2 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/252ca8bd-6f4a-4efa-6907-8399eba92500/86';
-const subCategory3 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/37d823ca-72df-4402-90b8-c3ccd393b200/86';
-const subCategory4 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/d5bf403c-c273-4a2a-66b1-87815bbe2d00/86';
+/* eslint-disable no-unused-vars */
+// Sub Category
+const subCategory1 =
+  "https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/e15f1b52-86ab-4f76-79f2-5303e307bb00/86";
+const subCategory2 =
+  "https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/252ca8bd-6f4a-4efa-6907-8399eba92500/86";
+import subCategory3 from "../assets/article-investors.jpg";
+import subCategory4 from "../assets/article-sales.jpg";
+
+// Featured Image
 import FeaturedImage1 from "../assets/latest_jobs.png";
 import FeaturedImage2 from "../assets/cosy_living.png";
-import FeaturedImage3 from "../assets/gaming.png";
-import FeaturedImage4 from "../assets/affordable_runarounds.png";
+import FeaturedImage3 from "../assets/category-electronics.jpg";
+import FeaturedImage4 from "../assets/category-car.jpg";
+
+// Advert
 import advert1 from "../assets/advert-1.jpeg";
 import advert2 from "../assets/advert-2.jpeg";
 import advert3 from "../assets/advert-3.png";
-const product1 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/ec94c896-832e-45ed-9cad-000917671100/86';
-const product2 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/268aae4b-4ff2-415e-add7-98738e861600/86';
-const product3 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/f6aa7d09-75cb-4b2c-9222-0167fe8e8f00/86';
-const product4 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/a0177e85-0668-41d8-d5cf-a61b8a23a100/86';
-const product5 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/00/s/ODAwWDYwMA==/z/QsIAAOSwTM9gtPoa/86';
-const product6 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/b0ad3df9-0f44-450e-99df-cdeeff81bc00/86';
-const product7 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/3565ab50-f256-4d1d-aafd-cc99121a9d00/86';
-const product8 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/ea500121-34f3-4d6f-7ee5-d37da9f8ca00/86';
-const product9 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/c0a61255-855e-4f57-efd9-b46f33eebf00/86';
-const product10 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/066d6ba0-0e5f-437c-17ad-dddff75ae400/86';
-const product11 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/ddadc077-75a4-4224-904d-9ba90cd4a300/86';
-const product12 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/1d4bab7f-fdf2-4668-5962-d7f1f4e4f600/86';
-const product13 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/40962d68-26c2-42ca-e9b5-a3952dedaa00/86';
-const product14 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/305d6489-ced9-486d-218c-dd72791a7700/86';
-const product15 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/56f85ef1-5bec-4ebc-e49a-a300dc1b8a00/86';
-const product16 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/41d0113f-baff-4441-8724-388168f31a00/86';
-const product17 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/520c3514-97c8-46cb-e895-0dccf6b8d800/86';
-const product18 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/0d338b68-9c19-49ff-05cb-6bd5c360cb00/86';
-const product19 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/f1fd93e2-3db8-4855-18ae-c3bc08ff2a00/86';
-const product20 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/00/s/MTAyNFg3Njg=/z/UE8AAOSwqIhb5Kse/86';
-const product21 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/c1d612cd-a440-4303-0a43-0afe71cb9f00/86';
-const product22 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/1092f838-b83e-4326-33ad-959b4fcc5900/86';
-const product23 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/138950a5-fb9d-46be-1f6a-918a06abf200/86';
-const product24 = 'https://imagedelivery.net/ePR8PyKf84wPHx7_RYmEag/72105fb7-313f-4b62-2972-4e14fd21d600/86';
 
+// Products
+const product1 =
+  "https://pictures-nigeria.jijistatic.net/155578484_MTYwMC0yMTM0LTM3MDg5YTZkNjMtMQ.webp";
+const product2 =
+  "https://pictures-nigeria.jijistatic.net/143156762_MTI5MC0yMjkzLTM5OTlkNzViMzAtMQ.webp";
+const product3 =
+  "https://pictures-nigeria.jijistatic.net/146024890_OTYwLTEyODAtZGJkN2ZlZTIxNw.webp";
+const product4 =
+  "https://pictures-nigeria.jijistatic.net/154761106_MzAwLTUzMy0yNGEwODYwNTIz.webp";
+const product5 =
+  "https://pictures-nigeria.jijistatic.net/154213072_MTAyNC02ODQtMDQwZTdiMmY4Ng.webp";
+const product6 =
+  "https://pictures-nigeria.jijistatic.net/88638489_MTYwMC0yMTMzLWJlMTcwZTc5MGMtMQ.webp";
+const product7 =
+  "https://pictures-nigeria.jijistatic.net/103051851_MTEyNS0xNTAwLTc0MThlNjkzMWM.webp";
+const product8 =
+  "https://pictures-nigeria.jijistatic.net/155583793_MTIwMC0xNjAwLTc4MTg3NTdhYmU.webp";
+const product9 =
+  "https://pictures-nigeria.jijistatic.net/153594186_ODQ2LTE1MDAtYTk4NTlkMWM0Nw.webp";
+const product10 =
+  "https://pictures-nigeria.jijistatic.net/141270732_MzAwLTMwMC01ZjA2MzYxYzJi.webp";
+const product11 =
+  "https://pictures-nigeria.jijistatic.net/155065303_MTIwMC0xNjAwLWJhYTdjZmU2YmM.webp";
+const product12 =
+  "https://pictures-nigeria.jijistatic.net/152574915_MzAwLTUzMy0zZGU1MzZiNTUx.webp";
+const product13 =
+  "https://pictures-nigeria.jijistatic.net/143360981_MTUwMC0yMDAwLTJmNGVjNzAyNTI.webp";
+const product14 =
+  "https://pictures-nigeria.jijistatic.net/151045975_MTYwMC0xMjAwLWM5NjI4ZDkyZjI.webp";
+const product15 =
+  "https://pictures-nigeria.jijistatic.net/61415948_img-20210208-163055-524_2_1500x1125.webp";
+const product16 =
+  "https://pictures-nigeria.jijistatic.net/37841452_image_1122x1496.jpg";
+const product17 =
+  "https://pictures-nigeria.jijistatic.net/154683273_MzAwLTM1MC1hNjI0MGQxNGMz.webp";
+const product18 =
+  "https://pictures-nigeria.jijistatic.net/152308006_MzAwLTIyNS0zMjA3ZmY0MzVm.webp";
+const product19 =
+  "https://pictures-nigeria.jijistatic.net/153486486_MzAwLTQwMC03ZjE2MDBiOTVj.webp";
+const product20 =
+  "https://pictures-nigeria.jijistatic.net/154317985_MzAwLTQwMC02NzAwNDI2YzA0.webp";
+const product21 =
+  "https://pictures-nigeria.jijistatic.net/154498451_MzAwLTQwMC00NTRjZjgwNmNh.webp";
+const product22 =
+  "https://pictures-nigeria.jijistatic.net/113841388_MzAwLTI4Mi1kNjAxMDg2ODZi.webp";
+const product23 =
+  "https://pictures-nigeria.jijistatic.net/107622278_MzAwLTMwMC05OTMyZjUyNmZmLTE.webp";
+const product24 =
+  "https://pictures-nigeria.jijistatic.net/142252767_MzAwLTI4My1mNjc0ZjNiMGYz.webp";
 
 export const subSections = [
   {
-    title: 'For Sale',
+    title: "For Sale",
     items: [
-      'Appliances', 
-      'Audio & Stereo',
-      'Baby & Kids Stuff',
-      'Cameras, Camcorders & Studio Equipment', 
-      'Tickets', 
-      'Computers & Software', 
-      'Home & Garden', 
-      'Health & Beauty', 
-      'House Clearance', 
-      'Video Games & Consoles', 
-      'Freebies', 
-      'Swap Shop', 
-      'Other Goods'
-    ],
-    
-  },
-  {
-    title: 'Car & Vehicle',
-    items: [
-      'Cars', 
-      'Motorbikes & Scooters', 
-      'Campervans & Motorhomes', 
-      'Caravans',
-      'Trucks',
-      'Wanted', 
-      'Vans', 
-      'Plant & Tractors', 
-      'Other Vehicles', 
-      'Accessories', 
-      'Parts'
+      "Appliances",
+      "Audio & Stereo",
+      "Baby & Kids Stuff",
+      "Cameras, Camcorders & Studio Equipment",
+      "Tickets",
+      "Computers & Software",
+      "Home & Garden",
+      "Health & Beauty",
+      "House Clearance",
+      "Video Games & Consoles",
+      "Freebies",
+      "Swap Shop",
+      "Other Goods",
     ],
   },
   {
-    title: 'Property',
+    title: "Car & Vehicle",
     items: [
-      'Indigene Property', 
-      'Indigene To Indigene', 
-      'Indigene To Non-Indigene', 
-      'Indigene Property', 
-      'To Rent', 
-      'To Share', 
-      'Commercial', 
-      'To Swap', 
-      'Parking & Garage', 
-      'International', 
-      'Holiday Rentals', 
-      'Property Wanted', 
+      "Cars",
+      "Motorbikes & Scooters",
+      "Campervans & Motorhomes",
+      "Caravans",
+      "Trucks",
+      "Wanted",
+      "Vans",
+      "Plant & Tractors",
+      "Other Vehicles",
+      "Accessories",
+      "Parts",
     ],
   },
   {
-    title: 'Jobs',
+    title: "Property",
     items: [
-      'Accountancy', 
-      'Admin, Secretarial & PA',
-      'Agriculture & Farming',
-      'Animals',
-      'Arts & Heritage',
-      'Charity',
-      'Childcare',
-      'Computing & IT',
-      'Construction & Property',
-      'Customer Service & Call Centre',
-      'Driving & Automotive',
-      'Engineering',
-      'Financial Services',
-      'Gardening',
-      'Health & Beauty',
-      'Healthcare & Medical',
-      'Hospitality & Catering',
-      'Housekeeping & Cleaning',
-      'HR',
-      'Legal',
-      'Leisure & Tourism',
-      'Manufacturing & Industrial',
-      'Marketing, Advertising & PR',
-      'Media, Digital & Creative',
-      'Performing Arts',
-      'Purchasing & Procurement',
-      'Recruitment',
-      'Retail & FMCG',
-      'Sales',
-      'Scientific & Research',
-      'Security',
-      'Social & Care Work',
-      'Sport, Fitness & Leisure',
-      'Teaching & Education',
-      'Transport, Logistics & Delivery',
+      "Indigene Property",
+      "Indigene To Indigene",
+      "Indigene To Non-Indigene",
+      "Indigene Property",
+      "To Rent",
+      "To Share",
+      "Commercial",
+      "To Swap",
+      "Parking & Garage",
+      "International",
+      "Holiday Rentals",
+      "Property Wanted",
     ],
   },
   {
-    title: 'Services',
+    title: "Jobs",
     items: [
-      'Business & Office',
-      'Childcare',
-      'Clothing',
-      'Computers & Telecoms',
-      'Entertainment',
-      'Finance & Legal',
-      'Food & Drink',
-      'Goods Suppliers & Retailers',
-      'Health & Beauty',
-      'Motoring',
-      'Pets',
-      'Property & Maintenance',
-      'Tradesmen & Construction',
-      'Transport',
-      'Travel & Tourism',
-      'Tuition & Classes',
-      'Weddings',
+      "Accountancy",
+      "Admin, Secretarial & PA",
+      "Agriculture & Farming",
+      "Animals",
+      "Arts & Heritage",
+      "Charity",
+      "Childcare",
+      "Computing & IT",
+      "Construction & Property",
+      "Customer Service & Call Centre",
+      "Driving & Automotive",
+      "Engineering",
+      "Financial Services",
+      "Gardening",
+      "Health & Beauty",
+      "Healthcare & Medical",
+      "Hospitality & Catering",
+      "Housekeeping & Cleaning",
+      "HR",
+      "Legal",
+      "Leisure & Tourism",
+      "Manufacturing & Industrial",
+      "Marketing, Advertising & PR",
+      "Media, Digital & Creative",
+      "Performing Arts",
+      "Purchasing & Procurement",
+      "Recruitment",
+      "Retail & FMCG",
+      "Sales",
+      "Scientific & Research",
+      "Security",
+      "Social & Care Work",
+      "Sport, Fitness & Leisure",
+      "Teaching & Education",
+      "Transport, Logistics & Delivery",
     ],
   },
   {
-    title: 'Community',
+    title: "Services",
     items: [
-      'Artists & Theatres',
-      'Classes',
-      'Events, Gigs & Nightlife',
-      'Groups & Associations',
-      'Lost & Found Stuff',
-      'Music, Bands & Musicians',
-      'Rideshare & Car Pooling',
-      'Skills & Language Swap',
-      'Sports Teams & Partners',
-      'Sports Teams & Partners',
-      'Sports Teams & Partners',
+      "Business & Office",
+      "Childcare",
+      "Clothing",
+      "Computers & Telecoms",
+      "Entertainment",
+      "Finance & Legal",
+      "Food & Drink",
+      "Goods Suppliers & Retailers",
+      "Health & Beauty",
+      "Motoring",
+      "Pets",
+      "Property & Maintenance",
+      "Tradesmen & Construction",
+      "Transport",
+      "Travel & Tourism",
+      "Tuition & Classes",
+      "Weddings",
     ],
   },
   {
-    title: 'Tours & Travels',
+    title: "Community",
     items: [
-      'Travel & Travel Partners',
-      'Trailblazer',
+      "Artists & Theatres",
+      "Classes",
+      "Events, Gigs & Nightlife",
+      "Groups & Associations",
+      "Lost & Found Stuff",
+      "Music, Bands & Musicians",
+      "Rideshare & Car Pooling",
+      "Skills & Language Swap",
+      "Sports Teams & Partners",
+      "Sports Teams & Partners",
+      "Sports Teams & Partners",
     ],
   },
   {
-    title: 'Dating',
-    items: [
-      'Indigene 4 Indigene',
-      'Indigene & Non-Indigene',
-    ],
+    title: "Tours & Travels",
+    items: ["Travel & Travel Partners", "Trailblazer"],
+  },
+  {
+    title: "Dating",
+    items: ["Indigene 4 Indigene", "Indigene & Non-Indigene"],
   },
   // Add more sections as needed
 ];
-
 
 export const categories = [
   {
@@ -195,11 +220,11 @@ export const categories = [
   },
   {
     image: subCategory3,
-    desp: "Gardening 101",
+    desp: "How Indigenes in Diaspora can Connect with Top Ranking Manufacturers to invest in Lagos",
   },
   {
     image: subCategory4,
-    desp: "12 ways to upcycle your sofa",
+    desp: "12 ways to Improve Sales through our platform(C.S.D.I.L)",
   },
 ];
 
@@ -222,210 +247,237 @@ export const features = [
   },
   {
     image: FeaturedImage2,
-    title: "Cosy Living",
+    title: "Funitures",
   },
   {
     image: FeaturedImage3,
-    title: "Gaming",
+    title: "Electronics",
   },
   {
     image: FeaturedImage4,
-    title: "Affordable Runarounds",
+    title: "Cars",
   },
 ];
 
 export const products = [
   {
     image: product1,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Hyundai Sonata 2015 Silver",
+    desp: "Foreign used Hyundai Sonata Limited, 2015 model",
+    price: "14, 250,000",
+    location: "Lagos, Ajah",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product2,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Affordable Luxury Single Room",
+    desp: "Duplex House",
+    price: "200,000",
+    location: "Lekki phase 1, Lagos",
+    indigene: "Indigene",
+    status: "Property",
+    ranging: "per month",
   },
   {
     image: product3,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Laptop HP EliteBook 8GB Intel Core I5 SSD 256GB",
+    desp: "HP ELITEBOOK 830 G5, 256gb ssd, 8gb ram, CORE I5, 8th gen, 13inches",
+    price: "300, 000",
+    location: "Computer Village, Lagos",
+    indigene: "Indigene",
+    status: "Used",
   },
   {
     image: product4,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Original Meling Deep Freezer With 2years Warranty.",
+    desp: "Dodge challenger 2017 upgraded to 2024 model",
+    price: "285,000",
+    location: "Lagos, Ojo",
+    indigene: "Indigene",
+    status: "LG, Brand New",
   },
   {
     image: product5,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Full Set Of Chairs",
+    desp: "Full set of quality leather sofa for your comfort.",
+    price: "470,000",
+    location: "Abuja, Nyanya",
+    indigene: "Non-Indigene",
+    status: "Brand New",
   },
   {
     image: product6,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Apple iPhone 12 128 GB Green",
+    desp: "IPhone 12 128gb",
+    price: "428,000",
+    location: "Lagos, Ikeja",
+    indigene: "Indigene",
+    status: "Direct UK used",
   },
   {
     image: product7,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Toyota Camry 4 Plug 2.4",
+    desp: "Engine & Drivetrain",
+    price: "650,000",
+    location: "Lagos, Mushin",
+    indigene: "Indigene",
+    status: "Used",
   },
   {
     image: product8,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Honda Pilot EX 4x4 (3.5L 6cyl 5A) 2005 Black",
+    desp: "Honda Pilot SUV in good condition for sale",
+    price: "3,500,000",
+    location: "Lagos, Ajah",
+    indigene: "Indigene",
+    status: "Used",
   },
   {
     image: product9,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Apple iPad Air 64 GB White",
+    desp: "IPad air available 64gb",
+    price: "87,500",
+    location: "Abuja, Wuse",
+    indigene: "Non-Indigene",
+    status: "Used",
   },
   {
     image: product10,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "US USED Perrysmit Airfryer",
+    desp: "Very neat UK used airfryer just like new.",
+    price: "37,000",
+    location: "Kwara, Ilorin West",
+    indigene: "Non-Indigene",
+    status: "Used",
   },
   {
     image: product11,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Elegant Marble Dinning",
+    desp: "Elegant marble dinning set by 6 seaters",
+    price: "2,500,000",
+    location: "Abuja, Wuse",
+    indigene: "Non-Indigene",
+    status: "Brand New",
   },
   {
     image: product12,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "GLK Upgrade Kits",
+    desp: "Mercedes benz GLK upgrade kits",
+    price: "1,200,000",
+    location: "Lagos, Mushin",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product13,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "1 Bedroom Flat",
+    desp: "24-hour Electricity, Air Conditioning, Balcony,",
+    price: "20,000",
+    location: "Lagos, Ajah",
+    indigene: "Indigene",
+    status: "Flat",
+    ranging: "per day",
   },
   {
     image: product14,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "High Quality Polystar 24” LED TV",
+    desp: "High quality at affordable price",
+    price: "98,000",
+    location: "Lagos, Ojodu",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product15,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Quality Indoor Table Tennis Board With Complete Accessories",
+    desp: "Standard quality indoor and outdoor table tennis",
+    price: "280,000",
+    location: "Lagos, Surulere",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product16,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Laptop Apple MacBook Pro 16GB Intel Core I7 512GB",
+    desp: "2017 Touchbar 16gb ram 512gb ssd cori7 macbook pro retina 15inches",
+    price: "590,000",
+    location: "Lagos, Lekki",
+    indigene: "Indigene",
+    status: "Used",
   },
   {
     image: product17,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "4bdrm Bungalow in Iletutun Estate, Idishin for sale",
+    desp: "a luxuriously designed 3 units of designed 4bedroom detached bungalow l",
+    price: "45,000,000",
+    location: "Oyo, Ibadan",
+    indigene: "Non-Indigene",
+    status: "For Sale",
+    ranging: "per year",
   },
   {
     image: product18,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Black Quality Travel Luggage",
+    desp: "Set of 4 with 3 boxes and a kit. Boxes comes in 4 wheels, key lock and inner compartment. Very durable and spacious",
+    price: "135,000",
+    location: "Abuja, Utako",
+    indigene: "Non-Indigene",
+    status: "Brand New",
   },
   {
     image: product19,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Cartier Nail Bracelet Jewelry Set",
+    desp: "Perfect for everyday wear and special occasions.",
+    price: "11,000",
+    location: "Kwara, Ilorin West",
+    indigene: "Non-Indigene",
+    status: "Used",
   },
   {
     image: product20,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Real Madrid 2024/2025 New Season Official Jersey",
+    desp: "Real Madrid new season official jersey is available both player and fans versions",
+    price: "12,000",
+    location: "Lagos, Ikeja",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product21,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Back to School Shoe",
+    desp: "back to school shoes ultimate wholesale opportunity don't wait,order now! wholesale back to school shoes at unbeatable prices.",
+    price: "5,000",
+    location: "Lagos, Isolo",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product22,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "3bdrm Apartment in Palms Estate, Dawaki for sale",
+    desp: "Exclusively finished 3 Bedroom Apartment in a serene environment with the additional fractures like Backyard Bulguary",
+    price: "50,000,000",
+    location: "Abuja, Gwarinpa,",
+    indigene: "Non-Indigene",
+    status: "Apartment",
+    ranging: "per year",
   },
   {
     image: product23,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Polystar Home Theatre -Pv-861-5.1",
+    desp: "Home Theatre",
+    price: "130,000",
+    location: "Lagos, Ikeja",
+    indigene: "Indigene",
+    status: "Brand New",
   },
   {
     image: product24,
-    title: "product Title",
-    desp: "lorem lorem lorem lorem lorerm lorem lorem lorem",
-    price: "1500",
-    location: "Kaduna, Nigeria",
-    postedOn: "12 Days Ago",
+    title: "Mercedes-Benz GLE-Class GLE 350d 4MATIC 2016 Red",
+    desp: "Mercedes-Benz",
+    price: "35,000,000",
+    location: "Lagos, Ikeja",
+    indigene: "Indigene",
+    status: "Foreign Used",
   },
-
 ];

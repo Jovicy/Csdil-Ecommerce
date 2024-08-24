@@ -13,35 +13,42 @@ const Products = () => {
           <div>
             <h1 className="font-semibold text-2xl">Discover more Good Finds</h1>
           </div>
-          <div className="flex gap-4 justify-between items-center flex-wrap">
+          <div className="flex gap-1 justify-between flex-wrap">
             {products.map((product) => (
-              <div className="flex flex-col bg-gray-50 w-22 rounded-md mb-3">
+              <div className="flex flex-col bg-gray-50 w-[24%] rounded-md mb-3 h-auto">
                 {/* price cart image */}
-                <div>
-                  <img src={product.image} className="rounded-t-md h-52 w-full" />
+                <div className="relative">
+                  <div className="h-72">
+                    <img
+                      src={product.image}
+                      className="rounded-t-md h-full w-full"
+                    />
+                  </div>
+                  <div className="bg-orange-200 p-1 border-2 border-orange-400 shadow-md absolute top-0 right-0">
+                    <p className="text-orange-400 text-base font-medium">{product.indigene}</p>
+                  </div>
                 </div>
                 {/* price cart description */}
                 <div className="flex flex-col gap-2 p-4">
+                  <div className="flex items-center gap-1">
+                    <h3 className="text-lg flex items-center text-orange-400 font-bold">
+                      &#8358; {product.price}
+                    </h3><small>{product.ranging}</small>
+                  </div>
                   <div>
-                    <h1 className="uppercase font-bold text-xl">
+                    <h1 className="uppercase font-bold text-base">
                       {product.title}
                     </h1>
-                  </div>
-                  <div className="flex flex-col gap-1">
                     <p className="text-sm">{product.desp}</p>
-                    <h3 className="text-base flex items-center text-orange-400 font-semibold">
-                      &#8358;{product.price}
-                    </h3>
                   </div>
-                  <div className="flex flex-col gap-1">
+                  <div className="flex justify-between items-center gap-1">
                     {/* location */}
-                    <p className="text-sm flex gap-1 items-center">
+                    <p className="text-xs flex gap-1 items-center">
                       <FaLocationDot />
                       {product.location}
                     </p>
-                    <p className="text-sm flex gap-1 items-center">
-                      <FaRegClock />
-                      {product.postedOn}
+                    <p className="text-xs flex gap-1 items-center bg-gray-100 p-2 rounded-sm font-semibold">
+                      {product.status}
                     </p>
                   </div>
                 </div>
