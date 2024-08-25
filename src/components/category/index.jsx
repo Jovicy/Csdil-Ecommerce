@@ -15,9 +15,9 @@ export default function Category() {
                     <h1 className="font-semibold text-2xl">Featured Categories</h1>
                 </div>
                 {/* category products */}
-                <div className='flex justify-between gap-5'>
+                <div className='flex md:flex-nowrap flex-wrap justify-between md:gap-5 gap-y-5'>
                 {features.map((feature) => (
-                    <div className='shadow-md flex flex-col items-center justify-center gap-1 bg-white rounded-sm w-1/4'>
+                    <div className='shadow-md flex flex-col items-center justify-center gap-1 bg-white rounded-sm md:w-1/4 w-49'>
                         <img src={feature.image} className="w-full h-64"/>
                         <p className='text-base font-bold p-2'>{feature.title}</p>
                     </div>

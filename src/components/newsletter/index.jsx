@@ -14,7 +14,7 @@ export default function Newsletter() {
       <section className="py-8 bg-sky-700 flex flex-col justify-center items-center">
         <div className="container flex flex-col justify-center items-center gap-4">
           {/* title */}
-          <div className="flex flex-col gap-2 text-center w-1/2 text-white">
+          <div className="flex flex-col gap-2 text-center md:w-1/2 w-full text-white">
             <h1 className="font-black text-3xl">Subscribe to our newsletter</h1>
             <p className="font-normal text-gray-300 text-base">
               Praesent fringilla erat a lacinia egestas. Donec vehicula tempor
@@ -22,7 +22,7 @@ export default function Newsletter() {
             </p>
           </div>
           {/* form */}
-          <div className="bg-white w-2/5 rounded-md p-2 flex justify-between items-center">
+          <div className="bg-white md:w-2/5 w-full rounded-md p-2 flex justify-between items-center">
             <input type="text" placeholder="Email Address" className="w-1/2 h-full"/>
             <div>
               <button className="bg-orange-400 rounded-md py-3 px-6 uppercase flex items-center gap-1 text-white font-semibold">
@@ -32,7 +32,7 @@ export default function Newsletter() {
             </div>
           </div>
           {/* sponsors */}
-          <div className="flex gap-12 items-center">
+          <div className="flex flex-wrap justify-center md:gap-12 gap-5 items-center">
             <div>
               <img src={sponsor1} />
             </div>

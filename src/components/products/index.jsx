@@ -11,14 +11,14 @@ const Products = () => {
         <div className="container py-10 flex flex-col gap-5 justify-center">
           {/* Product title */}
           <div>
-            <h1 className="font-semibold text-2xl">Discover more Good Finds</h1>
+            <h1 className="font-semibold text-2xl">Trending Ads</h1>
           </div>
           <div className="flex gap-1 justify-between flex-wrap">
             {products.map((product) => (
-              <div className="flex flex-col bg-gray-50 w-[24%] rounded-md mb-3 h-auto">
+              <div className="flex flex-col bg-gray-50 md:w-[24%] w-full rounded-md mb-3 h-auto">
                 {/* price cart image */}
                 <div className="relative">
-                  <div className="h-72">
+                  <div className="md:h-72 h-full">
                     <img
                       src={product.image}
                       className="rounded-t-md h-full w-full"

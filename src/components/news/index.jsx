@@ -15,12 +15,12 @@ export default function News() {
             <h1 className="text-3xl font-semibold">Latest News</h1>
           </div>
           {/* News Content Container */}
-          <div className="flex justify-evenly items-center">
+          <div className="flex md:flex-row md:gap-0 gap-5 flex-col justify-evenly items-center">
             {/* News Card */}
-            <div className="bg-white rounded-sm w-30 p-4 flex flex-col gap-5">
+            <div className="bg-white rounded-sm md:w-30 w-full p-4 flex flex-col gap-5">
               {/* Card Image */}
               <div>
-                <img src={Blog1} />
+                <img src={Blog1} className="w-full" />
               </div>
               {/* Card Content */}
               <div className="flex flex-col gap-5">
@@ -61,10 +61,10 @@ export default function News() {
               </div>
             </div>
             {/* News Card */}
-            <div className="bg-white rounded-sm w-30 p-4 flex flex-col gap-5">
+            <div className="bg-white rounded-sm md:w-30 w-full p-4 flex flex-col gap-5">
               {/* Card Image */}
               <div>
-                <img src={Blog2} />
+                <img src={Blog2} className="w-full"/>
               </div>
               {/* Card Content */}
               <div className="flex flex-col gap-5">
@@ -105,10 +105,10 @@ export default function News() {
               </div>
             </div>
             {/* News Card */}
-            <div className="bg-white rounded-sm w-30 p-4 flex flex-col gap-5">
+            <div className="bg-white rounded-sm md:w-30 w-full p-4 flex flex-col gap-5">
               {/* Card Image */}
               <div>
-                <img src={Blog3} />
+                <img src={Blog3} className="w-full"/>
               </div>
               {/* Card Content */}
               <div className="flex flex-col gap-5">
