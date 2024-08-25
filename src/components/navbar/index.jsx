@@ -31,8 +31,8 @@ export default function Navbar() {
     <>
       <nav className="flex flex-col">
         {/* Top-nav */}
-        <div className="bg-orange-400 py-2.5 text-white">
-          <div className="container flex justify-between items-center">
+        <div className="bg-orange-400 md:py-2.5 py-4 text-white">
+          <div className="container flex md:flex-row flex-col md:gap-0 gap-2 justify-between items-center">
             <div>
               <p className="text-sm text-center">
                 Welcome to Csdil E-commerce Platform <br />{" "}
@@ -85,15 +85,15 @@ export default function Navbar() {
           </div>
         </div>
         {/* Mid-nav */}
-        <div className="bg-orange-400 py-2.5 text-white">
-          <div className="container flex justify-between items-center gap-10 w-full">
+        <div className="bg-orange-400 md:py-2.5 py-4 text-white">
+          <div className="container flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-10 gap-5 w-full">
             {/* LOGO */}
-            <div className="w-1/4 flex items-center gap-3">
+            <div className="md:w-1/4 w-full flex justify-center items-center gap-3">
               <img src={logo} className="h-20 w-20 rounded-full" />
-              <h3>About Csdil</h3>
+              <h3 className="md:block hidden">About Csdil</h3>
             </div>
             {/* SEARCH */}
-            <div className="flex flex-col-reverse gap-1 justify-center items-center w-1/2">
+            <div className="flex flex-col-reverse gap-1 justify-center items-center md:w-1/2 w-full">
               <div className="bg-white rounded-sm w-full flex justify-between items-center p-3">
                 <div className="w-11/12 text-gray-500">
                   <input
@@ -108,7 +108,7 @@ export default function Navbar() {
               </div>
             </div>
             {/* REACTIONS */}
-            <div className="w-1/4 flex justify-end items-center gap-8">
+            <div className="md:w-1/4 w-full flex md:justify-end justify-center items-center gap-8">
               <FaShoppingCart className="h-6 w-6" />
               <div className="flex gap-1">
                 <div className="flex gap-1">
@@ -121,50 +121,79 @@ export default function Navbar() {
           </div>
         </div>
         {/* Bottom-nav */}
-        <div className="py-2.5 border-b border-gray-50">
+        {/* Bottom-nav */}
+        <div
+          style={{
+            py: 2.5,
+            borderBottom: "1px solid #ddd",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
+        >
           <div className="container flex items-center w-full">
-            <ul className="flex gap-10 items-center justify-between w-full">
+            <ul
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-between",
+                padding: 0,
+                margin: 0,
+                listStyle: "none",
+              }}
+            >
               {subSections.map((section, index) => (
                 <li
                   key={index}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
-                  className="relative flex items-center gap-2 cursor-pointer rounded-sm p-3 text-gray-500"
-                  aria-haspopup="true"
-                  aria-expanded={hoveredIndex === index}
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: 10,
+                    margin: 10,
+                    borderBottom: "1px solid #ddd",
+                  }}
                 >
-                  <p className="text-xs text-gray-500">{section.title}</p>
+                  <p style={{ fontSize: 12, color: "#666" }}>{section.title}</p>
                   {/* Dropdown Menu */}
                   {hoveredIndex === index && (
-                    <div className="fixed inset-0 flex justify-center z-30">
+                    <div
+                      style={{
+                        position: "fixed",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        zIndex: 30,
+                      }}
+                    >
                       <ul
-                        className={`mt-52 relative w-s80 bg-white border border-gray-200 rounded-md shadow-lg transform transition duration-200 ease-in-out origin-bottom scale-y-100 opacity-100`}
-                        aria-hidden={hoveredIndex !== index}
                         style={{
-                          display: "grid",
-                          gridTemplateColumns:
-                            section.items.length > 10
-                              ? "repeat(5, 1fr)"
-                              : "repeat(auto-fit, minmax(0, 1fr))",
-                          gridTemplateRows:
-                            "repeat(auto-fill, minmax(3rem, 1fr))",
-                          maxHeight:
-                            section.items.length > 10
-                              ? "calc(10 * 3rem)"
-                              : "none",
-                          overflowY:
-                            section.items.length > 10 ? "auto" : "visible",
+                          marginTop: 52,
+                          position: "relative",
+                          width: "80%",
+                          backgroundColor: "#fff",
+                          border: "1px solid #ddd",
+                          borderRadius: 10,
+                          boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+                          transform: "translateY(0)",
+                          transition: "transform 0.2s ease-in-out",
                         }}
+                        aria-hidden={hoveredIndex !== index}
                       >
                         {section.items.map((item, i) => (
                           <li
                             key={i}
-                            className="p-3 hover:bg-gray-100 cursor-pointer text-xs"
                             style={{
-                              width:
-                                section.items.length > 10
-                                  ? "calc(90vw / 5)"
-                                  : "auto",
+                              padding: 10,
+                              fontSize: 12,
+                              color: "#666",
+                              cursor: "pointer",
+                              borderBottom: "1px solid #ddd",
                             }}
                           >
                             {item}

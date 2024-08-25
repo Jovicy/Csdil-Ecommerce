@@ -4,7 +4,6 @@ import React from 'react';
 import { features } from "../../data/database";
 
 
-
 export default function Category() {
   return (
     <>

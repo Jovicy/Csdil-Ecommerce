@@ -11,14 +11,14 @@ const SubCategory = () => {
                 <div>
                     <h1 className='text-2xl font-semibold'>Good Finds, Guides and Articles</h1>
                 </div>
-                <div className='flex justify-between gap-7'>
+                <div className='flex md:flex-row flex-col justify-between gap-7'>
                     {categories.map((category, index) => (
-                        <div className="w-1/4 bg-white rounded-md cursor-pointer shadow">
-                            <div>
-                                <img src={category.image} className='rounded-t-lg w-full h-52'/>
+                        <div className="md:w-1/4 w-full bg-white rounded-md cursor-pointer shadow flex md:flex-col flex-row items-center">
+                            <div className='md:w-full w-1/2 md:h-52 h-40'>
+                                <img src={category.image} className='md:rounded-t-lg rounded-lg w-full h-full'/>
                             </div>
-                            <div className='border border-transparent border-t-gray-100'>
-                                <h3 className='p-2 text-sm font-medium text-justify'>{category.desp}</h3>
+                            <div className='border border-transparent md:border-t-gray-100 md:w-full w-1/2'>
+                                <h3 className='p-2 text-sm font-medium'>{category.desp}</h3>
                             </div>
                         </div>
                     ))}

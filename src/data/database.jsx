@@ -212,11 +212,11 @@ export const subSections = [
 export const categories = [
   {
     image: subCategory1,
-    desp: "12 ways to upcycle your old clothes",
+    desp: "12 ways to sell your old items faster using our platform",
   },
   {
     image: subCategory2,
-    desp: "Selling from Outside the country",
+    desp: "Benefits as a member of the platform",
   },
   {
     image: subCategory3,
@@ -243,7 +243,7 @@ export const adverts = [
 export const features = [
   {
     image: FeaturedImage1,
-    title: "Latest Jobs",
+    title: "Latest Jobs & Services",
   },
   {
     image: FeaturedImage2,
