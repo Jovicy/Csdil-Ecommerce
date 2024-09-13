@@ -18,6 +18,18 @@ import advert1 from "../assets/advert-1.jpeg";
 import advert2 from "../assets/advert-2.jpeg";
 import advert3 from "../assets/advert-3.png";
 
+// Team Member
+import member1 from "../assets/team-member.png";
+import member2 from "../assets/team-member.png";
+import member3 from "../assets/team-member.png";
+import member4 from "../assets/team-member.png";
+import member5 from "../assets/team-member.png";
+import member6 from "../assets/team-member.png";
+import member7 from "../assets/team-member.png";
+import member8 from "../assets/team-member.png";
+import member9 from "../assets/team-member.png";
+import member10 from "../assets/team-member.png";
+
 // Products
 const product1 =
   "https://pictures-nigeria.jijistatic.net/155578484_MTYwMC0yMTM0LTM3MDg5YTZkNjMtMQ.webp";
@@ -479,5 +491,58 @@ export const products = [
     location: "Lagos, Ikeja",
     indigene: "Indigene",
     status: "Foreign Used",
+  },
+];
+
+export const teams = [
+  {
+    img: member1,
+    name: "Jamila Thompson",
+    title: "Chief Executive Officer",
+  },
+  {
+    img: member2,
+    name: "Aminat .O. Abubakar",
+    title: "Vice President 1",
+  },
+  {
+    img: member3,
+    name: "Niyi Kassim Bashua",
+    title: "Vice President 2",
+  },
+  {
+    img: member4,
+    name: "Beyioku .M. Adegbite",
+    title: "Head, Culture & Heritage",
+  },
+  {
+    img: member5,
+    name: "Olusegun Segla HOKON",
+    title: "Head, Political Appointments & Rights",
+  },
+  {
+    img: member6,
+    name: "Yele Abisogun",
+    title: "Head, Digital Economy & Investment",
+  },
+  {
+    img: member7,
+    name: "Hon.(Dr.) Oladunni Haruna Balogun",
+    title: "Strategic Director",
+  },
+  {
+    img: member8,
+    name: "Adebola AbdulQuddus (Debany)",
+    title: "Strategic Director",
+  },
+  {
+    img: member2,
+    name: "Idris Tele Olukoya",
+    title: "Strategic Director",
+  },
+  {
+    img: member2,
+    name: "Nurudeen Olasunbo Ishola",
+    title: "Legal Team",
   },
 ];

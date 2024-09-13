@@ -90,7 +90,9 @@ export default function Navbar() {
             {/* LOGO */}
             <div className="md:w-1/4 w-full flex justify-center items-center gap-3">
               <img src={logo} className="h-20 w-20 rounded-full" />
-              <h3 className="md:block hidden">About Csdil</h3>
+              <Link to="/about-us">
+                <h3 className="md:block hidden">About Csdil</h3>
+              </Link>
             </div>
             {/* SEARCH */}
             <div className="flex flex-col-reverse gap-1 justify-center items-center md:w-1/2 w-full">
@@ -121,7 +123,6 @@ export default function Navbar() {
           </div>
         </div>
         {/* Bottom-nav */}
-        {/* Bottom-nav */}
         <div
           style={{
             py: 2.5,
@@ -139,6 +140,7 @@ export default function Navbar() {
                 justifyContent: "space-between",
                 padding: 0,
                 margin: 0,
+                width: "100%",
                 listStyle: "none",
               }}
             >
@@ -153,7 +155,6 @@ export default function Navbar() {
                     alignItems: "center",
                     padding: 10,
                     margin: 10,
-                    borderBottom: "1px solid #ddd",
                   }}
                 >
                   <p style={{ fontSize: 12, color: "#666" }}>{section.title}</p>

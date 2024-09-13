@@ -6,6 +6,7 @@ import Footer from "../src/components/footer";
 
 // Pages
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import SignupPage from "./pages/SignupPage";
 import ForgetPage from "./pages/ForgetPage";
 import VerifyPage from "./pages/VerifyPage";
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/about-us" component={AboutPage} />
         <Route path="/signin" component={SignupPage} />
         <Route path="/signup" component={SignupPage} />
         <Route path="/forget-password" component={ForgetPage} />
