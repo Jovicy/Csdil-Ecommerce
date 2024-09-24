@@ -12,6 +12,7 @@ import ForgetPage from "./pages/ForgetPage";
 import VerifyPage from "./pages/VerifyPage";
 import ResetPage from "./pages/ResetPage";
 import AdvertPage from "./pages/AdvertPage";
+import CustomerPage from "./pages/CustomerPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about-us" component={AboutPage} />
+        <Route path="/customer-support" component={CustomerPage} />
         <Route path="/signin" component={SignupPage} />
         <Route path="/signup" component={SignupPage} />
         <Route path="/forget-password" component={ForgetPage} />

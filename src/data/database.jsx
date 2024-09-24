@@ -546,3 +546,33 @@ export const teams = [
     title: "Legal Team",
   },
 ];
+
+export const topics = [
+  {
+    title: "How do I return my item?",
+  },
+  {
+    title: "What is Csdil Returns Policy?",
+  },
+  {
+    title: "How long is the refund process?",
+  },
+  {
+    title: "What are the 'Delivery Timelines?",
+  },
+  {
+    title: "What is Csdil",
+  },
+  {
+    title: "What to get Voucher & Gift in this community?",
+  },
+  {
+    title: "How to cancel Csdil Order.",
+  },
+  {
+    title: "Ask the Digital and Device Community",
+  },
+  {
+    title: "How to change my Profile name?",
+  },
+];

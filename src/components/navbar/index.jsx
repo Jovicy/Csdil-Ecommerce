@@ -41,8 +41,8 @@ export default function Navbar() {
                 </small>
               </p>
             </div>
-            <div className="flex gap-5 items-center">
-              <div className="flex gap-2 items-center border-r border-white px-5">
+            <div className="flex md:flex-row flex-col gap-5 items-center">
+              <div className="flex gap-2 items-center px-5">
                 <div>
                   <p className="text-sm tracking-widest">Follow us:</p>
                 </div>
@@ -88,10 +88,10 @@ export default function Navbar() {
         <div className="bg-orange-400 md:py-2.5 py-4 text-white">
           <div className="container flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-10 gap-5 w-full">
             {/* LOGO */}
-            <div className="md:w-1/4 w-full flex justify-center items-center gap-3">
+            <div className="md:w-1/4 w-full flex md:flex-row flex-col justify-center items-center gap-3">
               <img src={logo} className="h-20 w-20 rounded-full" />
               <Link to="/about-us">
-                <h3 className="md:block hidden">About Csdil</h3>
+                <h3>About Csdil</h3>
               </Link>
             </div>
             {/* SEARCH */}
