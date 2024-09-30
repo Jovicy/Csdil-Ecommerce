@@ -30,7 +30,7 @@ const Products = () => {
                 </div>
                 {/* price cart description */}
                 <div className="flex flex-col gap-2 p-4">
-                  <div className="flex items-center gap-1">
+                  <div className="flex md:flex-row flex-col md:items-center gap-1">
                     <h3 className="md:text-lg text-sm flex items-center text-orange-400 font-bold">
                       &#8358; {product.price}
                     </h3><small>{product.ranging}</small>
