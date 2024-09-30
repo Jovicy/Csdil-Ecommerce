@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React from 'react';
 import Advert from "../components/advert/index";
 import Feature from "../components/feature/index";
 import SubCategory from "../components/subCategory/index";

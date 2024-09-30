@@ -15,13 +15,13 @@ const Products = () => {
           </div>
           <div className="flex gap-1 justify-between flex-wrap">
             {products.map((product) => (
-              <div className="flex flex-col bg-gray-50 md:w-[24%] w-full rounded-md mb-3 h-auto">
+              <div className="flex flex-col bg-gray-50 md:w-[24%] w-49 rounded-md mb-3 shadow-md">
                 {/* price cart image */}
                 <div className="relative">
-                  <div className="md:h-72 h-full">
+                  <div className="md:h-72 h-52">
                     <img
                       src={product.image}
-                      className="rounded-t-md h-full w-full"
+                      className="rounded-t-md h-full w-full object-cover"
                     />
                   </div>
                   <div className="bg-orange-200 p-1 border-2 border-orange-400 shadow-md absolute top-0 right-0">
@@ -41,15 +41,17 @@ const Products = () => {
                     </h1>
                     <p className="text-sm">{product.desp}</p>
                   </div>
-                  <div className="flex justify-between items-center gap-1">
+                  <div className="flex md:flex-row flex-col justify-between md:items-center gap-1">
                     {/* location */}
                     <p className="text-xs flex gap-1 items-center">
                       <FaLocationDot />
                       {product.location}
                     </p>
-                    <p className="text-xs flex gap-1 items-center bg-gray-100 p-2 rounded-sm font-semibold">
-                      {product.status}
-                    </p>
+                    <div>
+                      <p className="text-xs flex gap-1 items-center md:bg-gray-100 bg-none p-2 rounded-sm font-semibold">
+                        {product.status}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

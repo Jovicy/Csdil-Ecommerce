@@ -7,7 +7,7 @@ const ForgetForm = () => {
   return (
     <>
       <div className="container py-14 flex flex-col gap-5 justify-center items-center">
-        <form className="bg-white border rounded-sm shadow w-2/5 p-4 flex flex-col gap-5">
+        <form className="bg-white border rounded-sm shadow md:w-2/5 w-full p-4 flex flex-col gap-5">
           {/* Form main content */}
           <div className="flex flex-col gap-4">
             {/* form title */}

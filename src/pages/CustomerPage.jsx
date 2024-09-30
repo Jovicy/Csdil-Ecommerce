@@ -181,8 +181,8 @@ const CustomerPage = () => {
             </div>
           </div>
           {/* section content container */}
-          <div className="w-full flex justify-center gap-6">
-            <div className="w-2/5 p-8 flex items-start gap-6 shadow-md rounded-md bg-white">
+          <div className="w-full flex md:flex-row flex-col justify-center gap-6">
+            <div className="md:w-2/5 w-full p-8 flex items-start gap-6 shadow-md rounded-md bg-white">
               <div className="p-6 bg-secondary-500-sub rounded-md">
                 <img src={PhoneIcon} />
               </div>
@@ -203,7 +203,7 @@ const CustomerPage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/5 p-8 flex items-start gap-6 shadow-md rounded-sm bg-white">
+            <div className="md:w-2/5 w-full p-8 flex items-start gap-6 shadow-md rounded-sm bg-white">
               <div className="p-6 bg-success-500-sub rounded-md">
                 <img src={ChatIcon} />
               </div>

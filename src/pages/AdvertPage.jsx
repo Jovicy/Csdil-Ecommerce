@@ -8,7 +8,7 @@ const AdvertPage = () => {
         <div className="container flex flex-col gap-5">
           {/* Post Ad Title */}
           <div className="bg-white border rounded-sm shadow p-4 flex justify-center text-center gap-5">
-            <div className="flex justify-between items-center w-1/2">
+            <div className="flex justify-between items-center md:w-1/2 w-full">
               <div>
                 <h1 className="font-medium text-lg">Post Ad</h1>
               </div>
@@ -22,7 +22,7 @@ const AdvertPage = () => {
           {/* Post Ad Fields */}
           <div className="bg-white border rounded-sm shadow p-5 flex flex-col justify-center items-center gap-5">
             <div className="w-3/4 flex justify-center items-center">
-              <div className="w-1/2 flex flex-col gap-5">
+              <div className="md:w-1/2 w-full flex flex-col gap-5">
                 {/* Input Fields */}
                 <div className="flex flex-col gap-2">
                   <label htmlFor="category" className="font-medium text-base">
@@ -72,7 +72,7 @@ const AdvertPage = () => {
 
                 <div className="flex flex-col gap-2">
                   <label htmlFor="category" className="font-medium text-base">
-                    Link To Youtube Video
+                    Add Photo
                   </label>
                   <h4></h4>
                   <p></p>

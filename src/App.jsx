@@ -13,6 +13,7 @@ import VerifyPage from "./pages/VerifyPage";
 import ResetPage from "./pages/ResetPage";
 import AdvertPage from "./pages/AdvertPage";
 import CustomerPage from "./pages/CustomerPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/signin" component={SignupPage} />
         <Route path="/signup" component={SignupPage} />
         <Route path="/forget-password" component={ForgetPage} />
+        <Route path="/error-page" component={ErrorPage} />
         <Route path="/verify-password" component={VerifyPage} />
         <Route path="/reset-password" component={ResetPage} />
         <Route path="/add-product" component={AdvertPage} />

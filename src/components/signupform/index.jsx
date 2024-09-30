@@ -18,7 +18,7 @@ const SignupForm = () => {
   return (
     <>
       <div className="container py-14 flex flex-col gap-5 justify-center items-center">
-        <form className="bg-white border rounded-sm shadow w-2/5">
+        <form className="bg-white border rounded-sm shadow md:w-2/5 w-full">
           {/* Form Title */}
           <div className="flex items-center justify-between w-full border border-transparent border-b-gray-100">
             <div
