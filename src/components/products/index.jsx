@@ -25,18 +25,18 @@ const Products = () => {
                     />
                   </div>
                   <div className="bg-orange-200 p-1 border-2 border-orange-400 shadow-md absolute top-0 right-0">
-                    <p className="text-orange-400 text-base font-medium">{product.indigene}</p>
+                    <p className="text-orange-400 md:text-base text-xs font-medium">{product.indigene}</p>
                   </div>
                 </div>
                 {/* price cart description */}
                 <div className="flex flex-col gap-2 p-4">
                   <div className="flex items-center gap-1">
-                    <h3 className="text-lg flex items-center text-orange-400 font-bold">
+                    <h3 className="md:text-lg text-sm flex items-center text-orange-400 font-bold">
                       &#8358; {product.price}
                     </h3><small>{product.ranging}</small>
                   </div>
                   <div>
-                    <h1 className="uppercase font-bold text-base">
+                    <h1 className="uppercase font-bold md:text-base text-sm">
                       {product.title}
                     </h1>
                     <p className="text-sm">{product.desp}</p>
